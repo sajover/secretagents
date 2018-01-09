@@ -1,4 +1,5 @@
 div {
+
 }
 
 body {
@@ -95,9 +96,12 @@ span {
 .container {
   max-width: 960px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
 
 .products {
+  width: 960px;
   margin: 3rem;
   display: flex;
   justify-content: space-between;
@@ -132,12 +136,15 @@ span {
 .Contact{
   display: flex;
   flex-direction: row;
-  max-width: 960px;
-  justify-content: space-around;
+  width: 960px;
+  justify-content: space-between;
   margin-bottom: 4rem;
 }
 .info{
   width: 35%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
 }
 .info h3{
   padding: 1rem 2rem;
@@ -159,6 +166,8 @@ footer {
   align-items: flex-end;
   background-color: black;
   max-height: 5rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 footer h3 {
