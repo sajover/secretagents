@@ -26,6 +26,22 @@ header {
   padding-left:0.5rem;
 }
 
+/* mobile screen */
+@media only screen and (max-width:470px){
+  header {
+    display: flex;
+    justify-content: center;
+  }
+  .text-content.logo {
+    display: none;
+  }
+
+  .image-content.logo img {
+    height:1.5rem;
+    padding-left:0.5rem;
+  }
+}
+
 .main-container{
   display:flex;
   flex-direction: column;
@@ -53,6 +69,20 @@ justify-content: center;
   background-color: black;
   width: 20rem;
   padding: 2rem 3rem;
+}
+
+/* mobile screen */
+@media only screen and (max-width:470px){
+  .main-banner {
+    padding-top: 10rem;
+    max-height: 15rem;
+    border: 3px solid pink;
+  }
+  .text-content.banner {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
 }
 h2 {
   font-size: 1rem;
@@ -147,6 +177,15 @@ span {
     width: 47%;
   }
   .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .product{
+    width: 90%;
+  }
+  .product.glasses,.product.watch {
     display: none;
   }
 }
